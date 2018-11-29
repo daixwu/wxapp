@@ -1,0 +1,44 @@
+/**dots.wxss**/
+
+.container{
+    padding: 0;
+    height: 1500rpx;
+  }
+  
+  .container .feed-item {
+    background: #ffffff;
+    font-weight: 300;
+    margin-bottom: 18rpx;
+    box-shadow: 0 0.0625em 0 0 rgba(230, 230, 230, 0.5);
+  }
+  
+  .feed-item .post-created {
+    padding-top: 16px;
+    opacity: .6;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .feed-item .post-voc {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 4px;
+  }
+  
+  .feed-item .post-img {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .feed-item .post-excerpt {
+    font-size: 15px;
+    line-height: 26px;
+    margin: 20px 20px 18px 20px;
+  }
+
+  .feed-item .post-tag {
+    font-size: 14px;
+    text-align: center;
+    line-height: 14px;
+    padding-bottom: 24px;
+  }

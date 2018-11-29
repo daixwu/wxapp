@@ -1,0 +1,12 @@
+.no-border {
+  border: none !important;
+  padding: 1px 16px !important;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.no-border image {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}

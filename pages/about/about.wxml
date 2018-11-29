@@ -1,0 +1,44 @@
+<!--mine.wxml-->
+<view class="container">
+    <view class="about-applet">
+      <view class="icon"><i-icon type="service"  size="40" color="#353535" /></view>
+      <view class="title black">关于 HeyCoder</view>
+      <view class="content semi">“HeyCoder”小程序是 heycoder.cn 的小程序版本，开发者为 Derwin，内容无外乎为自身日常的所思所想所得。</view>
+    </view>
+    
+    <view class="about-me">
+      <view class="icon"><i-icon type="emoji"  size="40" color="#353535" /></view>
+      <view class="title black">关于作者</view>
+      <view class="content semi">大慨是太懒惰，还未来得及矫情</view>
+      <view class="call-me">
+        <text>欢迎通过如下方式联系 Derwin 本人</text>
+        
+        <view class="cell">
+          <text class="pull-left">GitHub： </text>
+          <view class="github pull-left" bindtap="copyDataTap" data-index="{{github}}">github.com/daixwu</view>
+        </view>
+        <view class="cell">
+            <text class="pull-left">邮箱： </text>
+            <view class="email pull-left" bindtap="copyDataTap" data-index="{{email}}">daixwu@gmail.com</view>
+        </view>
+        <view class="cell">
+            <text class="pull-left">微信： </text>
+            <view class="wechat pull-left" bindtap="copyDataTap" data-index="{{wechat}}">Adaixwu</view> 
+        </view>
+      </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

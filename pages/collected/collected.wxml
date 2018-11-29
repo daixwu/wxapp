@@ -1,0 +1,8 @@
+<!--collected.wxml-->
+
+<block wx:for="{{posts}}" wx:key="idx" wx:for-index="idx" data-data="{{item}}">
+  <view id="{{item.id}}" bindtap="bindItemTap">
+      <i-card full i-class="no-border" title="{{item.title}}" thumb="{{item.imageUrl}}">
+        </i-card>
+  </view>
+</block>

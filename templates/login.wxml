@@ -1,0 +1,24 @@
+<!--templates/login.wxml-->
+
+<template name="login">
+  <view class="popup {{ showPopup ? 'popup-show' : ''}}">
+    <view class="popup-mask"></view>
+    <view class="popup-container">
+      <view wx:if="{{canIUse}}">
+        <view class="login-chat">
+          <image class="chat-img" src="../../images/icon/gravatar.png" background-size="cover"></image>
+        </view>
+        <view class="login-text grey">
+          允许微信授权后，可体验更多功能</view>
+        <view class="login-btns">
+          <i-button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" type="success">授权登录</i-button>
+          <i-button bindtap="navigateBack" type="ghost">返回首页</i-button>
+        </view>
+      </view>
+
+      <view wx:else>
+          <i-button type="error">您的微信版本过低，请升级后再次体验</i-button>
+      </view>
+    </view>
+  </view>
+</template>

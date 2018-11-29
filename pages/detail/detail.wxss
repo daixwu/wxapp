@@ -1,0 +1,17 @@
+@import "/wxParse/wxParse.wxss";
+
+.container {
+    background: #ffffff;
+    padding: 20rpx;
+}
+
+.feed-item .post-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.feed-item .post-info {
+    overflow: hidden;
+    font-size: 14px;
+    margin: 10px 0 8px;
+}

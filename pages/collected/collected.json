@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "i-panel": "../../dist/panel/index",
+    "i-card": "../../dist/card/index"
+  },
+  "navigationBarTitleText": "最近浏览"
+}

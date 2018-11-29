@@ -1,0 +1,32 @@
+<!--mine.wxml-->
+<import src="../../templates/login.wxml" />
+
+<scroll-view class="container more">
+  <view class="userInfo">
+    <image class="userInfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userInfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="panel">
+    <i-cell-group>
+      <i-cell title="最近浏览" is-link bindtap="showRecent"><i-icon type="browse" slot="icon" size="24" color="#fa615a" /></i-cell>
+      <!-- <i-cell title="我的收藏" is-link><i-icon type="collection" slot="icon" size="20" color="#f5871f" /></i-cell> -->
+    </i-cell-group>
+  </view>
+
+  <!-- <view class="panel">
+    <i-cell-group>
+      <i-cell title="  我的博客" is-link><i-icon type="collection" slot="icon" size="20" color="#f5871f" /></i-cell>
+    </i-cell-group>
+  </view> -->
+
+  <view class="panel">
+    <i-cell-group>
+      <i-cell title="联系作者" is-link url="/pages/about/about"><i-icon type="message" slot="icon" size="24" color="#6bd42c" /></i-cell>
+      <i-cell title="关于小程序" is-link is-link url="/pages/about/about"><i-icon type="mobilephone" slot="icon" size="24" color="#1dcdf3" /></i-cell>
+    </i-cell-group>
+  </view>
+</scroll-view>
+
+<!--弹出层：授权-->
+<template is="login" data="{{showPopup: showPopup, canIUse: canIUse}}"></template>

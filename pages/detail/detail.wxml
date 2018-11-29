@@ -1,0 +1,26 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<scroll-view scroll-y="true" class="container">
+    <!--文章头部-->
+    <view class="feed-item" id="{{post.id}}">
+        <view class="post-title">
+            <text>{{post.title}}</text>
+        </view>
+        <view class="post-info grey">
+            <view class="post-author pull-left"  style="margin-right: 20px;">
+                <i-icon type="mine" />
+                <text> Derwin</text>
+            </view>
+            <view class="icon-created pull-left">
+                <i-icon type="activity" size="14" />
+                <text> {{post.created_at}}</text>
+            </view>
+        </view>
+    </view>
+    
+    <!--文章主体-->
+    <view class="wxParse semi">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+
+</scroll-view>

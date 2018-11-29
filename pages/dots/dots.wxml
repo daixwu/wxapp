@@ -1,0 +1,38 @@
+<!--dots.wxml-->
+
+<scroll-view scroll-y="true" class="container" bindscrolltolower="lower" enable-back-to-top="true">
+    <block wx:for="{{posts}}" wx:key="idx" wx:for-index="idx" wx:for-item="item" >
+        <view class="feed-item">
+            <view id="{{item.id}}" bindtap="bindItemTap">
+                <view class="post-created black" >
+                    <text>{{item.created_at}}</text>
+                </view>
+                <view class="post-voc grey" >
+                    <text>{{item.title}}</text>
+                </view>
+                <view class="post-img">
+                    <image mode="widthFix" style="width: 100%; height: 50px;" src="{{item.feature_image}}"></image>
+                </view>
+            </view>
+
+            <view class="post-excerpt semi">
+                <text>{{item.custom_excerpt}}</text>
+            </view>
+            <view class="post-tag grey">
+                <text>{{item.tags[0].name}}</text>
+            </view>
+        </view>
+    </block>
+</scroll-view>
+
+<view class="container {{ loading ? 'show' : 'hide' }}">
+    <i-spin size="large" i-class="loading" fix></i-spin>
+</view>
+      
+      
+      
+      
+      
+      
+      
+      

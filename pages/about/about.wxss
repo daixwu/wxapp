@@ -1,0 +1,33 @@
+.container {
+  background: #ffffff;
+  padding-top: 20px;
+}
+
+.icon, .title {
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.content {
+  font-size: 16px;
+  padding: 20px 20px;
+}
+
+.call-me {
+  font-size: 15px;
+  padding: 20px 20px;
+}
+
+.cell {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.github, .email, .wechat {
+  color: #ef3355;
+}

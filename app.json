@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/mine/mine",
+    "pages/collected/collected",
+    "pages/dots/dots",
+    "pages/about/about"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "HeyCoder",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#e63855",
+    "backgroundColor": "#f0f0f0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/dots/dots",
+        "iconPath": "images/tabbar/dots.png",
+        "selectedIconPath": "images/tabbar/dots-selected.png",
+        "text": "句号"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/tabbar/mine.png",
+        "selectedIconPath": "images/tabbar/mine-selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+
+  "debug": true
+}
